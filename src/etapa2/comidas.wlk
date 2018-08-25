@@ -36,9 +36,9 @@ object canelon {
 	method sacarSalsa(){tieneSalsa = false}
 	method sacarQueso(){tieneQueso = false}
 	method energiaPorGramo(){
-		if(tieneSalsa and tieneQueso){ return 32}
-		else if(tieneSalsa and not tieneQueso){return 25}
-		else if (not tieneSalsa and tieneQueso){return 27}
+		if(tieneSalsa and tieneQueso){ return gramoCanelon + 5 + 7}
+		else if(tieneSalsa and not tieneQueso){return gramoCanelon + 5}
+		else if (not tieneSalsa and tieneQueso){return gramoCanelon + 7}
 		else   {return gramoCanelon }
 		}
 		}  
